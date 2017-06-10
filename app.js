@@ -1,5 +1,10 @@
 const readline = require('readline');
 
+//load the lesson plan
+let lessonPlan = require('./lessonPlan');
+const numOfLessons = lessonPlan.lesson.length;
+console.log(`Number of lessons is ${numOfLessons}`);
+
 let rl = readline.Interface({
     input: process.stdin,
     output: process.stdout 

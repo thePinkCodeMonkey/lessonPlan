@@ -1,0 +1,19 @@
+{
+	"lesson": [{
+			"description": "The first step",
+			"hash": "0157d66"
+		},
+		{
+			"description": "The 2nd step",
+			"hash": "0157d66"
+		},
+		{
+			"description": "The third step",
+			"hash": "0157d66"
+		},
+		{
+			"description": "The fourth step",
+			"hash": "0157d66"
+		}
+	]
+}
