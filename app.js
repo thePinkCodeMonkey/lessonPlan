@@ -1,9 +1,9 @@
 const readline = require('readline');
+const Lesson = require('./lessons');
 
 //load the lesson plan
 let lessonPlan = require('./lessonPlan');
-const numOfLessons = lessonPlan.lesson.length;
-console.log(`Number of lessons is ${numOfLessons}`);
+let lesson = new Lesson(lessonPlan.lesson);
 
 let rl = readline.Interface({
     input: process.stdin,
@@ -26,9 +26,13 @@ rl.on("line", input => {
             break;
         case 'prev':
             console.log("Going back to previous lesson.");
+            lesson.previousLesson();
+            console.log(lesson.getCurrentLessonObject());
             break;
         case 'next':
             console.log("Let's move to the next lesson.");
+            lesson.nextLesson();
+            console.log(lesson.getCurrentLessonObject());
             break;
         default:
             console.log("I don't understand what you just said.");
@@ -38,3 +42,5 @@ rl.on("line", input => {
 .on("close", () => {
     cleanUp();
 });
+
+console.log(`Number of lessons is ${lesson.numberOfLessons}`);

@@ -1,0 +1,13 @@
+{
+  "name": "github-lesson-plan",
+  "version": "0.0.1",
+  "description": "A companion script that turns a github repo into a lesson plan",
+  "main": "app.js",
+  "repository": "git@github.com:thePinkCodeMonkey/lessonPlan.git",
+  "author": "<thepinkcodemonkey@gmail.com>",
+  "dependencies": {
+    "async": "~0.2.8",
+    "express": "~3.2.4",
+    "socket.io": "~0.9.14"
+  }
+}
